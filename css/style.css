@@ -103,15 +103,15 @@ body {
 .about{
 	margin-top: 100px;
 }
-.about__header{
+.header{
 	margin-bottom: 145px;
 }
-.about__title{
+.header__title{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.about_text_name{
+.header_text_name{
 	font-size: 30px;
 	color: #000;
 	font-weight: 700;
@@ -124,17 +124,18 @@ body {
 	height: 45px;
 	background-color: #f39c12;
 }
-.about_text{
+.header_text{
 	padding-left: 17px;
+	text-transform: uppercase;
 }
 @media screen and (max-width:640px){
-	.about__title{
+	.header__title{
 		flex-wrap: wrap;
 	}
 	.vertical_line{
 		display: none;
 	}
-	.about_text_name{
+	.header_text_name{
 		padding-bottom: 20px;
 	}
 }
@@ -147,22 +148,24 @@ body {
 }
 .story__content{
 	padding-left: 30px;
-	padding-right: 50px;
+}
+.our__story{
+	padding-right: 30px;
 }
 .story__title{
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #000;
+	padding-bottom: 30px;
 }
 .story_subtitle{
 	font-size: 18px;
 	line-height: 25px;
 	color: #ec7063;
-	padding-top: 30px;
+	padding-bottom: 40px;
 }
 .story__text{
-	padding-top: 50px;
 	line-height: 25px;
 }
 @media screen and (max-width:960px){
@@ -179,12 +182,67 @@ body {
 	.story__title{
 		padding-top: 15px;
 	}
+	.story__img img{
+		width: 100%;
+	}
 }
 
 .skills{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 
 	margin-top: 120px;
+}
+.skills__item{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.skills__story{
+	border-bottom: 0;
+	padding-bottom: 65px;
+}
+.graph__item{
+	margin-bottom: 45px;
+}
+.graph{
+	height: 10px;
+	width: 100%;
+	background-color: #e6e6e6;
+}
+.graph_title{
+	padding-bottom: 15px;
+	font-size: 20px;
+}
+.strong_title{
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000;
+}
+.graph__value{
+	height: 100%;
+	background-color: #f39c12;
+}
+/* skills % */
+#design{
+	width: 88%;
+}
+#development{
+	width: 76%;
+}
+#wordpress{
+	width: 81%;
+}
+#drupal{
+	width: 71%;
+}
+
+
+@media screen and (max-width:960px){
+	.skills{
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	.skills__item img{
+		width: 100%;
+	}
 }
