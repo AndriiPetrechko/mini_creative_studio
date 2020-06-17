@@ -246,3 +246,106 @@ body {
 		width: 100%;
 	}
 }
+
+/* end style for section about */
+.quote{
+	width: 100%;
+	background-image: url('../img/quote_bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+}
+.quote__content{
+	margin: 0 auto;
+	padding-top: 245px;
+	padding-bottom: 255px;
+	text-align: center;
+}
+.quote__title{
+	display: flex;
+	justify-content: space-around;
+	font-size: 45px;
+	color: #fff;
+	font-weight: 700;
+}
+.quotes{
+	font-size: 65px;
+	font-style: italic;
+}
+.quote_line{
+	margin: 43px auto 23px auto;
+	height: 4px;
+	width: 50px;
+	background-color: #f39c12;
+}
+.quote__text{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+}
+
+/* end style for section quote*/
+
+/* style for section team */
+.team{
+	margin-top: 100px;
+}
+.team_card{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.card__item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 0 15px;
+}
+.card__photo{
+	padding: 30px 35px;
+}
+.card__name{
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+	padding-bottom: 12px;
+}
+.card__profession{
+	font-size: 15px;
+	color: #999999;
+	padding-bottom: 14px;
+}
+.card__line{
+	width: 20px;
+	height: 4px;
+	background-color: #cccccc;
+	margin: 0 auto;
+}
+.card__text{
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 30px;
+}
+/* card hover style */
+.card__item:hover{
+	border-top: 4px solid #f39c12;
+	cursor: pointer;
+	background-color: #f0f0f0;
+}
+.card__item:hover .card__line{
+	background-color: #e74c3c;
+}
+
+
+@media screen and (max-width:1220px){
+	.team_card{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+/* end style for section team */
