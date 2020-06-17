@@ -180,3 +180,11 @@ body {
 		padding-top: 15px;
 	}
 }
+
+.skills{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin-top: 120px;
+}
