@@ -303,6 +303,7 @@ body {
 	justify-content: center;
 	text-align: center;
 	margin: 0 15px;
+	border-top: 4px solid transparent;
 }
 .card__photo{
 	padding: 30px 35px;
@@ -470,5 +471,137 @@ body {
 	}
 	.service__item{
 		padding-top: 30px;
+	}
+}
+.pricing{
+	margin-top: 120px;
+	display: flex;
+	justify-content: space-between;
+}
+.pricing__left{
+	justify-content: flex-start;
+	padding-right: 90px;
+}
+.pricing__icon{
+	width: 120px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #f39c12;
+	border-radius: 100%;
+}
+.pricing .service__title{
+	text-align: left;
+}
+.pricing .service__text{
+	text-align: left;
+}
+.pricing__tables{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.table__column{
+	border: 1px solid #e6e6e6;
+	transition: all .2s;
+}
+.column__header{
+	padding: 28px 95px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.header__line{
+	width: 50px;
+	height: 2px;
+	background-color: #f39c12;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.t_row{
+	text-align: center;
+	padding: 20px 40px;
+	border-top: 1px solid #e6e6e6;
+}
+.odd{
+	background-color: #fafafa;
+}
+.t__footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid #e6e6e6;
+	padding: 34px 60px;
+}
+.table_btn{
+	border: 2px solid #f39c12;
+	padding: 12px 32px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+}
+.table_btn:active{
+	transform: translateY(4px);
+}
+.table__column:hover .column__header{
+	padding-top: 44px;
+	color: #fff;
+	background-color: #f39c12;
+}
+.table__column:hover{
+	transform: translateY(-16px);
+	cursor: pointer;
+}
+.table__column:hover .header__line{
+	background-color: #fff;
+}
+.table__column:hover .table_btn{
+	background-color: #f39c12;
+	color: #fff;
+}
+.table__column:hover .t_row{
+	background-color: #f2f2f2;
+}
+.table__column:hover .odd{
+	background-color: #e6e6e6;
+}
+.table__column:hover .t__footer{
+	padding-bottom: 44px;
+}
+@media screen and (max-width:1024px){
+	.pricing{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.pricing__left{
+		justify-content: center;
+		align-items: center;
+		padding-right: 0;
+		padding-bottom: 40px;
+	}
+	.pricing .service__title{
+		text-align: center;
+	}
+	.pricing .service__text{
+		text-align: center;
+	}
+	.pricing__icon{
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 840px){
+	.pricing__tables{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.table__column{
+		margin-top: 30px;
 	}
 }
