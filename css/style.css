@@ -360,3 +360,57 @@ body {
 	}
 }
 /* end style for section team */
+
+/* style for section facts */
+.facts{
+	width: 100%;
+	background-image: url('../img/facts_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 100px;
+}
+.facts__content{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 185px;
+	padding-bottom: 240px;
+}
+
+.facts__logo{
+	border-radius: 100%;
+	border: 2px solid #f39c12;
+	width: 165px;
+	height: 165px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.facts__title{
+	padding-top: 30px;
+	font-size: 44px;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.facts__text{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+.facts__item:hover .facts__logo{
+	border: 2px solid #fff;
+}
+@media screen and (max-width:1220px){
+	.facts__content{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.facts__item{
+		padding-top: 30px;
+	}
+}
+/* end style for section facts */
