@@ -339,8 +339,19 @@ body {
 .card__item:hover .card__line{
 	background-color: #e74c3c;
 }
-
-
+.card__social{
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+.card__links{
+	color: #999999;
+	padding-left: 7px;
+	padding-right: 7px;
+	transition: all .2s;
+}
+.card__links:hover{
+	color: #f39c12;
+}
 @media screen and (max-width:1220px){
 	.team_card{
 		display: flex;
