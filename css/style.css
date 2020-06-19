@@ -475,6 +475,7 @@ body {
 }
 .pricing{
 	margin-top: 120px;
+	margin-bottom: 190px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -505,6 +506,7 @@ body {
 .table__column{
 	border: 1px solid #e6e6e6;
 	transition: all .2s;
+	height: 460px;
 }
 .column__header{
 	padding: 28px 95px;
@@ -558,6 +560,7 @@ body {
 .table__column:hover{
 	transform: translateY(-16px);
 	cursor: pointer;
+	padding-bottom: 0;
 }
 .table__column:hover .header__line{
 	background-color: #fff;
@@ -600,8 +603,47 @@ body {
 	.pricing__tables{
 		flex-wrap: wrap;
 		justify-content: space-around;
+		height: auto;
 	}
 	.table__column{
 		margin-top: 30px;
 	}
 }
+
+/* end style for service*/
+
+/*style for testimonial */
+.testimonial{
+	margin-top: 90px;
+	width: 100%;
+	background-image: url('../img/facts_bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 150;
+}
+.testimonial__content{
+	padding-top: 195px;
+	padding-bottom: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.testimonial__title{
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.testimonial_line{
+	margin-top: 18px;
+}
+.testimonial__text{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	padding-right: 200px;
+	padding-left: 200px;
+	line-height: 30px;
+}
+
+/* end style for testimonial */
